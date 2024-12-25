@@ -1,0 +1,25 @@
+$version: 20241123173258;
+
+@font-face {
+  font-family: "Fontasm";
+  src: url("../fonts/fontasm.woff2?"+$version) format("woff2"),
+       url("../fonts/fontasm.woff?"+$version) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 1rem "Fontasm";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.fa-certify:before {
+    content: "\E000";
+  }
+  &.fa-dropdown:before {
+    content: "\E001";
+  }
+}

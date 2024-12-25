@@ -23,10 +23,11 @@
    <meta name="theme-color" content="#1c1c1c">
    <meta name="darkreader-lock">
 
-   <!-- <link rel="stylesheet" type="text/css" href="styles/fontasm.min.css"> -->
+   <link rel="stylesheet" type="text/css" href="styles/fontasm.css">
    <!-- <link rel="stylesheet" type="text/css" href="styles/radiocanada.min.css"> -->
    <!-- <link rel="stylesheet" type="text/css" href="styles/cascadiacode.min.css"> -->
-   <link rel="stylesheet" type="text/css" href="styles/main.css">
+   <link rel="stylesheet" type="text/css" href="styles/certify.css">
+   <!-- <link rel="stylesheet" type="text/css" href="styles/print.css"> -->
    <!-- <style rel="stylesheet" id="nightCSS"></style> -->
    <!-- <style rel="stylesheet" id="dayCSS"></style> -->
 
@@ -38,7 +39,7 @@
    <meta property="og:image:type" content="image/png">
    <meta property="og:image:width" content="1200">
    <meta property="og:image:height" content="1200">
-   <meta property="og:image:alt" content="Catadex Logo">
+   <meta property="og:image:alt" content="Certify Logo">
    <meta property="og:description" content="Certify lets you print Certificates in batches, allowing customizations of names and other texts.">
 
    <meta name="twitter:title" content="Certify">
@@ -46,6 +47,115 @@
    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-   <!-- <script type="text/javascript" src="scripts/libconfig.min.js"></script> -->
+   <content>
+      <div class="nav">
+         <div class="top">
+            <span></span>
+            <a href="/">
+               <!-- add logo here -->
+            </a>
+         </div>
+         <div class="left">
+            <span class="active" data-config="page-size">
+               <span>
+                  <i class="fa fa-certify"></i>
+               </span>
+            </span>
+            <span data-config="select-design">
+               <span>
+                  <i class="fa fa-certify"></i>
+               </span>
+            </span>
+            <span data-config="overlay-text">
+               <span>
+                  <i class="fa fa-certify"></i>
+               </span>
+            </span>
+         </div>
+         <div class="right">
+            <span class="active" data-config="page-size">1</span>
+            <span data-config="select-design">2</span>
+            <span data-config="overlay-text">3</span>
+         </div>
+      </div>
+      <div class="preview">
+         <print data-size="841/1189" class="portrait">
+            <page>
+               <svg class="block" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 8 8"><path d="M-396-396h800v800h-800z"/></svg>
+            </page>
+         </print>
+         <!-- add page switching buttons -->
+      </div>
+   </content>
+
+
+
+   
+   <!-- <print data-size="841/1189" class="portrait">
+      <page>
+         <svg class="block" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 8 8"><path d="M-396-396h800v800h-800z"/></svg>
+      </page>
+   </print>
+   <config>
+      <section data-type="page-size">
+         <span>Aspect Ratio</span>
+         <div>
+            <span>ISO A0</span>
+            <i class="fa fa-dropdown"></i>
+            <ul class="dropdown">
+               <li data-value="841/1189">ISO A0</li>
+               <li data-value="594/841">ISO A1</li>
+               <li data-value="420/594">ISO A2</li>
+               <li data-value="297/420">ISO A3</li>
+               <li data-value="210/297">ISO A4</li>
+               <li data-value="148/210">ISO A5</li>
+               <li data-value="105/148">ISO A6</li>
+               <li data-value="74/105">ISO A7</li>
+               <li data-value="52/74">ISO A8</li>
+               <li class="divider"></li>
+               <li data-value="85/110">Letter (ANSI A)</li>
+               <li data-value="85/140">Legal</li>
+               <li data-value="11/17">Ledger (ANSI B)</li>
+               <li data-value="725/1055">Executive</li>
+               <li data-value="17/22">ANSI C</li>
+               <li data-value="22/34">ANSI D</li>
+               <li data-value="34/44">ANSI E</li>
+               <li class="divider"></li>
+               <li data-value="1000/1414">ISO B0</li>
+               <li data-value="707/1000">ISO B1</li>
+               <li data-value="500/707">ISO B2</li>
+               <li data-value="353/500">ISO B3</li>
+               <li data-value="250/353">ISO B4</li>
+               <li data-value="176/250">ISO B5</li>
+               <li data-value="125/176">ISO B6</li>
+               <li data-value="88/125">ISO B7</li>
+               <li data-value="62/88">ISO B8</li>
+               <li class="divider"></li>
+               <li data-value="648/458">ISO C2</li>
+               <li data-value="458/324">ISO C3</li>
+               <li data-value="324/229">ISO C4</li>
+               <li data-value="229/162">ISO C5</li>
+               <li data-value="162/114">ISO C6</li>
+            </ul>
+         </div>
+         <span>Orientation</span>
+         <div>
+            <span>Portrait</span>
+            <i class="fa fa-dropdown"></i>
+            <ul class="dropdown">
+               <li data-value="portrait">Portrait</li>
+               <li data-value="landscape">Landscape</li>
+            </ul>
+         </div>
+      </section>
+      <section data-type="select-design">
+
+      </section>
+      <section data-type="overlay-text">
+
+      </section>
+   </config> -->
+   <script type="text/javascript" src="scripts/pagesize.min.js"></script>
+   <script type="text/javascript" src="scripts/togglenav.min.js"></script>
 </body>
 </html>
