@@ -59,6 +59,10 @@ svg {
   width: 1em;
 }
 
+.fa {
+  line-height: 1;
+}
+
 html {
   font-family: var(--sans-serif);
   font-size: var(--font-size);
@@ -130,14 +134,14 @@ content > .nav > .left {
   background: var(--menu-bg);
   display: flex;
   flex-direction: column;
-  padding: 3rem 0;
+  padding: 3rem 0 3rem 0.5rem;
 }
 content > .nav > .left > span {
   cursor: pointer;
   position: relative;
   height: 10rem;
   padding: 2rem 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 content > .nav > .left > span span {
   position: relative;
@@ -162,6 +166,9 @@ content > .nav > .left > span span::before {
 content > .nav > .left > span span::after {
   bottom: -1rem;
 }
+content > .nav > .left > span span .fa {
+  transform: translateX(-0.25rem);
+}
 content > .nav > .left > span::before, content > .nav > .left > span::after {
   position: absolute;
   content: "";
@@ -180,15 +187,12 @@ content > .nav > .left > span::after {
   border-radius: 0 1.4285714286rem 1.4285714286rem 0;
 }
 content > .nav > .left > span:nth-of-type(1) {
-  z-index: 1;
   transform: translateY(calc(-1 * 2rem));
 }
 content > .nav > .left > span:nth-of-type(2) {
-  z-index: 2;
   transform: translateY(calc(-2 * 2rem));
 }
 content > .nav > .left > span:nth-of-type(3) {
-  z-index: 3;
   transform: translateY(calc(-3 * 2rem));
 }
 content > .nav > .left > span.active {
@@ -208,7 +212,7 @@ content > .nav > .left > span:not(.active):hover span::before, content > .nav > 
   background: var(--menu-hover);
 }
 content > .nav > .left > span:not(.active):active .fa {
-  transform: scale(0.75);
+  transform: translateX(-0.25rem) scale(0.75);
 }
 content > .nav > .right {
   width: 34rem;

@@ -1,4 +1,4 @@
-$version: 20241123173258;
+$version: 20241127011755;
 
 @font-face {
   font-family: "Fontasm";
@@ -21,5 +21,14 @@ $version: 20241123173258;
   }
   &.fa-dropdown:before {
     content: "\E001";
+  }
+  &.fa-text:before {
+    content: "\E002";
+  }
+  &.fa-page:before {
+    content: "\E003";
+  }
+  &.fa-design:before {
+    content: "\E004";
   }
 }

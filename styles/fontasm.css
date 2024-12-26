@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Fontasm";
-  src: url("../fonts/fontasm.woff2?20241123173258") format("woff2"), url("../fonts/fontasm.woff?20241123173258") format("woff");
+  src: url("../fonts/fontasm.woff2?20241127011755") format("woff2"), url("../fonts/fontasm.woff?20241127011755") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,4 +17,13 @@
 }
 .fa.fa-dropdown:before {
   content: "\e001";
+}
+.fa.fa-text:before {
+  content: "\e002";
+}
+.fa.fa-page:before {
+  content: "\e003";
+}
+.fa.fa-design:before {
+  content: "\e004";
 }/*# sourceMappingURL=fontasm.css.map */
